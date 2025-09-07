@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms2</title>
+    <link rel="shortcut icon" href="https://www.google.com/imgres?q=favicon%20pintrest&imgurl=https%3A%2F%2Fcdn0.iconfinder.com%2Fdata%2Ficons%2FPinterest%2F512%2FPinterest_Favicon.png&imgrefurl=https%3A%2F%2Fwww.iconfinder.com%2Ficons%2F71633%2Fpinterest_favicon_icon&docid=jriAI7KIMVWMRM&tbnid=AGMo6p3BJRqRUM&vet=12ahUKEwiet_WpnMaPAxUQ2DgGHfs6DhwQM3oECBoQAA..i&w=512&h=512&hcb=2&ved=2ahUKEwiet_WpnMaPAxUQ2DgGHfs6DhwQM3oECBoQAA" type="image/x-icon">
 </head>
 
 <body>
@@ -14,47 +15,59 @@
     <form action="form.py">
         <fieldset>
             <legend>My Form</legend>
-        <input type="radio" name="gender" id="male" value="male" checked>
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="female" value="female">
-        <label for="female">Female</label>
-        <br><br>
-        <p>Skills:</p>
-        <input type="checkbox" name="html" id="html" value="html" checked>
-        <label for="html">HTML</label>
-        <input type="checkbox" name="css" id="css" value="css">
-        <label for="css">CSS</label>
-        <input type="checkbox" name="js" id="js" value="js">
-        <label for="js">JS</label>
-        <br><br>
-        <!--Dropdown-->
-        <p>State:</p>
-        <select name="states" id="" multiple>
-            <option value="AP">AP</option>
-            <option value="ts">TS</option>
-            <option value="ks">KS</option>
-            <option value="goa">Goa</option>
-            <option value="mh">MH</option>
-        </select>
-        <br><br>
-        <p>optgroup</p>
-        <label for="dino-select">Choose a dinosaur:</label>
-        <select id="dino-select">
-            <optgroup label="Theropods">
-                <option>Tyrannosaurus</option>
-                <option>Velociraptor</option>
-                <option>Deinonychus</option>
-            </optgroup>
-            <optgroup label="Sauropods">
-                <option>Diplodocus</option>
-                <option>Saltasaurus</option>
-                <option>Apatosaurus</option>
-            </optgroup>
-        </select>
-        <br><br>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+            <input type="radio" name="gender" id="male" value="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <br><br>
+            <p>Skills:</p>
+            <input type="checkbox" name="html" id="html" value="html" checked>
+            <label for="html">HTML</label>
+            <input type="checkbox" name="css" id="css" value="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="js" id="js" value="js">
+            <label for="js">JS</label>
+            <br><br>
+            <!--Dropdown-->
+            <p>State:</p>
+            <select name="states" id="" multiple>
+                <option value="AP">AP</option>
+                <option value="ts">TS</option>
+                <option value="ks">KS</option>
+                <option value="goa">Goa</option>
+                <option value="mh">MH</option>
+            </select>
+            <br><br>
+            <p>optgroup</p>
+            <label for="dino-select">Choose a dinosaur:</label>
+            <select id="dino-select">
+                <optgroup label="Theropods">
+                    <option>Tyrannosaurus</option>
+                    <option>Velociraptor</option>
+                    <option>Deinonychus</option>
+                </optgroup>
+                <optgroup label="Sauropods">
+                    <option>Diplodocus</option>
+                    <option>Saltasaurus</option>
+                    <option>Apatosaurus</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <br><br>
+            <label for="ice-cream-choice">Choose a flavor:</label>
+            <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+            <datalist id="ice-cream-flavors">
+                <option value="Chocolate"></option>
+                <option value="Coconut"></option>
+                <option value="Mint"></option>
+                <option value="Strawberry"></option>
+                <option value="Vanilla"></option>
+            </datalist>
+
         </fieldset>
     </form>
 
